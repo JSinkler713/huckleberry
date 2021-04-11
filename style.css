@@ -10,3 +10,67 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --small-font: 1rem;
+  --medium-font: 1.25rem;
+  --large-font: 1.5rem;
+  --header-font: 2rem;
+  /* color palette */
+  /* Green */
+  --primary-color: hsl(160deg, 100%, 30%);
+  /* Golds */
+  --secondary-color-lighter: hsl(45deg, 100%, 50%);
+  --secondary-color-darker: hsl(45deg, 100%, 40%);
+  /* Grays */
+}
+
+body, html {
+  min-height: 100%;
+}
+
+header {
+  margin-top: 48px;
+}
+h1 {
+  margin-bottom: 40px;
+}
+.max-width-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.intro-chunk {
+  width: 370px;
+  padding: 20px;
+}
+.intro-chunk > p {
+  font-size: var(--medium-font);
+}
+strong {
+  color: var(--primary-color);
+}
+main {
+  border-top: 4px solid hsl(0deg, 0%, 30%);
+  background-color: hsl(0deg, 0%, 50%);
+  height: 100%;
+}
+.card {
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding-top: 4px;
+  padding: 4px 20px 4px 20px;
+  background: white;
+  border-bottom: 4px solid hsl(0deg, 0%, 30%);
+}
+.card h2 {
+  text-align: left;
+  background-color: var(--secondary-color-lighter);
+  margin-left: -40px;
+  margin-top: 4px;
+  width: fit-content;
+  padding: 20px 40px;
+  border-bottom: 4px solid var(--secondary-color-darker);
+}
+.card p {
+  line-height: 1.25;
+}
